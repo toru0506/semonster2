@@ -11,4 +11,6 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("こんにちは SEMonster", classUnderTest.getGreeting());
     }
+
+    
 }
