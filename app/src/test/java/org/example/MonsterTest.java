@@ -28,4 +28,29 @@ public class MonsterTest {
         Monster Test1 = new Monster(4);
         assertNotNull("シーサーペント:レア度[5]" , Test1.toString());
     }
+
+    @Test public void appHasAGreeting6() {
+        Monster Test1 = new Monster(6);
+        assertNotNull("メガスライム:レア度[4]" , Test1.toString());
+    }
+
+    @Test public void appHasAGreeting7() {
+        Monster Test1 = new Monster(7);
+        assertNotNull("ギガサハギン:レア度[5]" , Test1.toString());
+    }
+
+    @Test public void appHasAGreeting8() {
+        Monster Test1 = new Monster(8);
+        assertNotNull("メカドラゴン:レア度[14]" , Test1.toString());
+    }
+
+    @Test public void appHasAGreeting9() {
+        Monster Test1 = new Monster(9);
+        assertNotNull("デュララハン:レア度[10]" , Test1.toString());
+    }
+
+    @Test public void appHasAGreeting10() {
+        Monster Test1 = new Monster(10);
+        assertNotNull("シーサーペント・テラ:レア度[6]" , Test1.toString());
+    }
 }

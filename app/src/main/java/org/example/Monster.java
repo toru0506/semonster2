@@ -6,7 +6,11 @@ public class Monster {
   
   Monster(int mnumber){
     this.name = this.summonMonster(mnumber);
+    if(this.getRare(mnumber) >= 3){
+      this.name = this.summonMonster2(mnumber);
+    }
     this.rare = this.getRare(mnumber); 
+    
   }
 
   String summonMonster(int mnumber) {
@@ -14,10 +18,17 @@ public class Monster {
     return monsters[mnumber];
   }
 
+  String summonMonster2(int mnumber){
+    String monsters[] = {"メガスライム", "ギガサハギン", "メカドラゴン", "デュララハン", "シーサーペント・テラ"};
+    return monsters[mnumber];
+  }
+
   int getRare(int mnumber) {
     int rare[] = { 1, 3, 10, 7, 5 };
     return rare[mnumber];
   }
+
+  
 
   @Override
   public String toString() {
