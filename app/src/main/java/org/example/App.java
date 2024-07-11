@@ -12,7 +12,7 @@ public class App {
         System.out.println(new App().getGreeting());
 
         //Monsterクラス
-        Monster monster = new Monster(0);
+        Monster monster = new Monster(5);
         monster.toString();
     }
 }

@@ -14,12 +14,12 @@ public class Monster {
   }
 
   String summonMonster(int mnumber) {
-    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" ,"ゾンビ"};
     return monsters[mnumber];
   }
 
   String summonMonster2(int mnumber){
-    String monsters[] = {"メガスライム", "ギガサハギン", "メカドラゴン", "デュララハン", "シーサーペント・テラ"};
+    String monsters[] = {"メガスライム", "ギガサハギン", "メカドラゴン", "デュララハン", "シーサーペント・テラ" ,"メガ・ゾンビ"};
     return monsters[mnumber];
   }
 
