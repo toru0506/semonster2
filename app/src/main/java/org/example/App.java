@@ -4,15 +4,20 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "こんにちは SEMonster";
-    }
+  public String getGreeting() {
+    return "こんにちは SEMonster";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+  public String gameStartMessage() {
+    return "Game Start!";
+  }
 
-        //Monsterクラス
-        Monster monster = new Monster(0);
-        monster.toString();
-    }
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    System.out.println(new App().gameStartMessage());
+
+    // Monsterクラス
+    Monster monster = new Monster(0);
+    monster.toString();
+  }
 }
