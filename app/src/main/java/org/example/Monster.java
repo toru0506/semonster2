@@ -5,8 +5,8 @@ public class Monster {
   private int rare; // 戦うとレア度が高いほうが勝つ．同じ場合は引き分け
   
   Monster(int mnumber){
-    if(this.getRare(mnumber) >= 3){
-      this.name = this.summonMonster2(mnumber);
+    if (mnumber >= 5){
+      this.name = this.summonMonster2(mnumber-5);
     }else{
       this.name = this.summonMonster(mnumber);
     }
@@ -24,7 +24,7 @@ public class Monster {
   }
 
   int getRare(int mnumber) {
-    int rare[] = { 1, 3, 10, 7, 5, 4, 5, 14, 10, 6};
+    int rare[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     return rare[mnumber];
   }
 
@@ -32,6 +32,6 @@ public class Monster {
 
   @Override
   public String toString() {
-    return this.name + ":レア度[" + this.rare + "]\n";
+    return this.name + ":レア度[" + this.rare + "]";
   }
 }
