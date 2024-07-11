@@ -14,6 +14,7 @@ public class MonsterTest {
         assertNotNull("サハギン:レア度[3]" , Test1.toString());
     }
 
+
     @Test public void appHasAGreeting3() {
         Monster Test1 = new Monster(2);
         assertNotNull("ドラゴン:レア度[10]" , Test1.toString());
@@ -53,4 +54,10 @@ public class MonsterTest {
         Monster Test1 = new Monster(4);
         assertNotNull("シーサーペント・テラ:レア度[6]" , Test1.toString());
     }
+
+    @Test public void appHasAGreeting11() {
+        Monster Test1 = new Monster(5);
+        assertNotNull("メガ・ゾンビ:レア度[4]" , Test1.toString());
+    }
+
 }
