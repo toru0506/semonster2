@@ -6,7 +6,11 @@ public class Monster {
   
   Monster(int mnumber){
     if(this.getRare(mnumber) >= 3){
-      this.name = this.summonMonster2(mnumber);
+      if(this.getRare(mnumber) >= 10){
+        this.name = this.summonMonster3(mnumber);
+      }else{
+        this.name = this.summonMonster2(mnumber);
+      }
     }else{
       this.name = this.summonMonster(mnumber);
     }
@@ -23,8 +27,13 @@ public class Monster {
     return monsters[mnumber];
   }
 
+  String summonMonster3(int mnumber){
+    String monsters[] = {"ファイヤードラゴン", "サンダーメカドラゴン", "AI・デュララハン"};
+    return monsters[mnumber];
+  }
+
   int getRare(int mnumber) {
-    int rare[] = { 1, 3, 10, 7, 5, 4, 5, 14, 10, 6};
+    int rare[] = { 1, 3, 10, 7, 5, 4, 5, 14, 10, 6, 13};
     return rare[mnumber];
   }
 

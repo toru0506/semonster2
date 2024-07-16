@@ -53,4 +53,19 @@ public class MonsterTest {
         Monster Test1 = new Monster(4);
         assertNotNull("シーサーペント・テラ:レア度[6]" , Test1.toString());
     }
+
+    @Test public void appHasAGreeting11() {
+        Monster Test1 = new Monster(0);
+        assertNotNull("ファイヤードラゴン:レア度[13]" , Test1.toString());
+    }
+
+    @Test public void appHasAGreeting12() {
+        Monster Test1 = new Monster(1);
+        assertNotNull("サンダーメカドラゴン:レア度[13]" , Test1.toString());
+    }
+
+    @Test public void appHasAGreeting13() {
+        Monster Test1 = new Monster(2);
+        assertNotNull("AI・デュララハン:レア度[13]" , Test1.toString());
+    }
 }
